@@ -37,6 +37,10 @@ function generatePassword() {
         console.log(usedArr);
       }
 
+      var password = [];
+              for (var p = 0; p < pLength; p++){
+              password.push(usedArr[Math.floor(Math.random() * usedArr.length)]);  
+              }
   }
 }
 // Write password to the #password input
