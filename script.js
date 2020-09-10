@@ -1,41 +1,14 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-var numArray = [];
-var specialArray = [];
-var upperArray = [];
-var lowerArray = [];
-var used = [];
+
+// arrays to hold characters to make up password
+var numArr = ["1","2","3","4","5","6","7","8","9","0"];
+var specialArr = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"];
+var upperArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+var lowerArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 
-function generatePassword(){
-  var pLength = prompt("How many characters do you want your password to be");
-    if (pLength <7 || pLength > 128){
-    }
-    
-    else {
-      alert("Sorry, the password length must be between 8 and 128")
-    }
-
-      var specChar = confirm("Do you want to use special characters?")
-      var caps = confirm("Do you want to use uppercase letters?")
-      var lower = confirm("Do you want to use lower case letters?")
-      var num = confirm("Do you want to use numbers?");
-
-
-
-
-
-
-
-
-
-
-
-
-
-  return "end password"
-}
 
 // Write password to the #password input
 function writePassword() {
@@ -48,5 +21,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
