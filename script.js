@@ -10,17 +10,23 @@ var lowerArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 var usedArr=[];
 
 function generatePassword() {
-  var pLength = prompt("How many characters do you want your password to be?");
+      var pLength = prompt("How many characters do you want your password to be?");
+      if (pLength > 7 && pLength < 129) {
 
-  var specChar = confirm("Do you want to use special characters?");
+      var specChar = confirm("Do you want to use special characters?");
+        if(specChar){
+          usedArr.push(...specialArr);
+          console.log(usedArr);
+        }
 
-  var upper = confirm("Do you want to use uppercase letters?");
+      var upper = confirm("Do you want to use uppercase letters?");
 
-  var lower = confirm("Do you want to use lower case letters?");
-  
-  var num = confirm("Do you want to use numbers?");
+      var lower = confirm("Do you want to use lower case letters?");
 
+      var num = confirm("Do you want to use numbers?");
 
+  }
+}
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
