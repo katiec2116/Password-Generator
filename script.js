@@ -20,10 +20,22 @@ function generatePassword() {
         }
 
       var upper = confirm("Do you want to use uppercase letters?");
+      if(upper){
+        usedArr.push(...upperArr);
+        console.log(usedArr);
+      }
 
       var lower = confirm("Do you want to use lower case letters?");
+      if(lower){
+        usedArr.push(...lowerArr);
+        console.log(usedArr);
+      }
 
       var num = confirm("Do you want to use numbers?");
+      if(num){
+        usedArr.push(...numArr);
+        console.log(usedArr);
+      }
 
   }
 }
