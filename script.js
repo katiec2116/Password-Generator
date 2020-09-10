@@ -11,6 +11,10 @@ var usedArr=[];
 
 function generatePassword() {
       var pLength = prompt("How many characters do you want your password to be?");
+      while(pLength < 7 || pLength > 128) {
+        alert("Sorry, the password length must be between 8 and 128 character.");
+        var pLength = prompt("How many characters do you want your password to be?");
+      }
       if (pLength > 7 && pLength < 129) {
 
       var specChar = confirm("Do you want to use special characters?");
@@ -41,6 +45,7 @@ function generatePassword() {
               for (var p = 0; p < pLength; p++){
               password.push(usedArr[Math.floor(Math.random() * usedArr.length)]);  
               }
+              return password.join("")
   }
 }
 // Write password to the #password input
