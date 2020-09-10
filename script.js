@@ -9,12 +9,14 @@ var upperArr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
 var lowerArr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 function generatePassword() {
-  // empty array to add password characters into
+  // clear out array to add password characters into
   var usedArr = [];
-  // length of user password
+  // chosen length of user password
   var pLength = prompt("How many characters do you want your password to be?");
+  // loop to continuously prompt user for length until condition is met
   while (pLength < 7 || pLength > 128) {
-    alert("Sorry, the password length must be between 8 and 128 character.");
+    alert("Sorry, the password length must be between 8 and 128 characters.");
+    // re-prompt the user
     var pLength = prompt("How many characters do you want your password to be?");
   }
   if (pLength > 7 && pLength < 129) {
@@ -43,12 +45,14 @@ function generatePassword() {
       usedArr.push(...numArr);
       console.log(usedArr);
     }
-    // randomly choosing characters from combined array until specified length is met
+    // empty array to hold randomly chosen characters
     var password = [];
+    // randomly choosing characters from combined array until specified length is met
     for (var p = 0; p < pLength; p++) {
       password.push(usedArr[Math.floor(Math.random() * usedArr.length)]);
     }
     // converting characters to one string without commas
+    console.log
     return password.join("")
   }
 }
