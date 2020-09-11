@@ -11,7 +11,7 @@ Many people deal with sensitive data on a day to day basis and need to be certai
 to access that data is difficult to crack. This password generator will provide a secure password 
 that can meet specific critera and also be impossible to guess.
 
-![GitHub repo size](https://img.shields.io/github/repo-size/katiec2116/password-generator)   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![GitHub repo size](https://img.shields.io/github/repo-size/katiec2116/password-generator)   [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Features
 
@@ -26,7 +26,7 @@ that can meet specific critera and also be impossible to guess.
 
 ## License
 
-MIT License
+GNU GPL v3
 
 
 ## Tests
