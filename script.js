@@ -55,7 +55,8 @@ function generatePassword() {
     }
     // check if any values were selected
     if (usedArr.length < 1) {
-      alert("Sorry, can't create a password with no chosen characters, please restart.")
+      alert("Sorry, can't create a blank password, please restart and select at least 1 character type.");
+
     }
 
 
